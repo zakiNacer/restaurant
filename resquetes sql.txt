@@ -1,0 +1,23 @@
+chifrer les mdp :
+
+INSERT INTO admin (login, mdp)
+	VALUES ('admin', md5('admin'));
+
+
+crée produit :
+
+INSERT INTO `produit` (`IDPROD`, `NOM`, `PRIXPROD`, `PHOTO`, `CATEGORIE`)
+	VALUES (NULL, 'sushi saumon', '0.48', 'Img/produit/ceviche-saumon.png','1');
+
+cree client :
+
+INSERT INTO client (NOM,PRENOM, ADRESSE, TEL, CP, MAIL)	
+	VALUES ('crocodil','kimbobo','anger',0666666666,49000, "kim@mail.com");
+
+
+trié par categorie :
+select * from produit 
+WHERE CATEGORIE =2
+
+supprimer :
+DELETE FROM `produit` WHERE `produit`.`idProd` = idProd
